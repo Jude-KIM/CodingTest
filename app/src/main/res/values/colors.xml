@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="orange">#f4a736</color>
+    <color name="settings_background">#fff7f7f7</color>
+    <color name="yellow_background">#f9e81e</color>
+    <color name="list_long_click">#767676</color>
+    <color name="black">#ff000000</color>
+    <color name="black_half_transparent">#88000000</color>
+    <color name="soft_black">#ff434343</color>
+    <color name="soft_black2">#ff343434</color>
+    <color name="font_gray4">#444444</color>
+    <color name="nickname">#005cac</color>
+    <color name="time">#bfbfbf</color>
+    <color name="selected_filter_label">#FFFFFF</color>
+    <color name="unselected_filter_label">#cccccc</color>
+    <color name="font_gray1">#222222</color>
+    <color name="mention">#4778d9</color>
+    <color name="hashtag">#3ab6aa</color>
+    <color name="link">#4978d6</color>
+    <color name="videolink">#30000000</color>
+    <color name="mention_list_bg">#e6e6e6</color>
+    <color name="message_content">#767676</color>
+    <color name="mbox_bg">#f4f6fa</color>
+    <color name="list_header">#f7f7f7</color>
+    <color name="info_list_select">#f5f5f5</color>
+    <color name="black_alpha_70">#b3000000</color>
+    <color name="white_alpha_95">#f2ffffff</color>
+    <color name="white_alpha_85">#c2ffffff</color>
+    <color name="theme_primary">#4778d9</color>
+    <color name="theme_primary_90">#5b87d9</color>
+    <color name="theme_primary_66">#becff0</color>
+    <color name="theme_primary_dark">#3C66B8</color>
+    <color name="settting_bg">#ffffffff</color>
+    <color name="mention_pressed_bg">#e6e6e6</color>
+    <color name="mention_on_me_bg">#FEF3B8</color>
+    <color name="label_for_mention">#4285F4</color>
+    <color name="btn_normal">#ff4778d9</color>
+    <color name="btn_disabled">#80D1D6D9</color>
+    <color name="btn_blue_pressed">#3860ae</color>
+    <color name="btn_white_pressed">#e5e5e5</color>
+    <color name="btn_txt_disabled">#80D1D6D9</color>
+    <!--<color name="background_grey">#f6f6f6</color>-->
+    <color name="text_grey_b2">#b2b2b2</color>
+    <color name="text_grey_10">#aaaaaa</color>
+    <color name="text_grey_8">#888888</color>
+    <color name="text_grey_6">#666666</color>
+    <color name="text_grey_5">#555555</color>
+    <color name="text_grey_3">#333333</color>
+    <color name="text_grey_c">#cccccc</color>
+    <color name="grey_d">#DDDDDD</color>
+    <color name="gray_e">#EEEEEE</color>
+    <color name="gray_a3">#a3a3a3</color>
+    <color name="text_theme_disabled">#7FA1E2</color>
+    <color name="divider">#e3e3e3</color>
+    <color name="gray_f6">#f6f6f6</color>
+
+    <!-- wallmessage list view-->
+    <color name="background_gray">#f2f2f2</color>
+    <color name="post_divider">#f2f2f2</color>
+    <color name="list_selected">#e2e2e2</color>
+    <color name="list_unread">#FFF8C1</color>
+    <color name="list_unread_selected">#EBE3B1</color>
+    <color name="default_list_bg">#fff</color>
+    <color name="default_list_reply_background">#f7f7f7</color>
+    <color name="notice_unread">#EEF9FF</color>
+    <color name="notice_unread_selected">#CAD3D9</color>
+
+
+    <color name="notification_unread">#F5F7FB</color>
+    <color name="notification_unread_selected">#EBEDF1</color>
+
+    <color name="circle_border">#1a000000</color>
+    <color name="gray_transparent">#99666666</color>
+    <color name="gray_transparent_pressed">#99999999</color>
+    <color name="gray_very_light">#f2f2f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="hint">#aaaaaa</color>
+    <color name="hint_primary_blue">#80a2e4</color>
+    <color name="action_menu_pressed">#804778d9</color>
+    <color name="action_menu_disabled">#50ffffff</color>
+    <color name="member_list_background_deactivated">#f2f2f2</color>
+    <color name="badge">#fc594e</color>
+    <color name="text_error">#fc6953</color>
+    <color name="attach_note_text">#a2a6a8</color>
+    <color name="attach_note_image">#b2b6b8</color>
+    <color name="search_text_highlight">#80a2e4</color>
+    <color name="jude_test">#33786767</color>
+    <color name="material_green">#0e9587</color>
+    <color name="gray_d8">#d8d8d8</color>
+    <color name="image_picker">#88b2b2b2</color>
+    <color name="snack_bar_background">#323232</color>
+    <color name="chat_me_background">#e5eef7</color>
+    <color name="chat_other_background">#ffffff</color>
+    <color name="stroke">#19000000</color>
+
+    <!-- poll view -->
+    <color name="poll_background">#f8f8f8</color>
+    <color name="poll_background_border">#d8d8d8</color>
+    <color name="poll_item_selected_background">#e5edf6</color>
+    <color name="poll_item_selected_background_border">#a6bee8</color>
+    <color name="poll_question_icon_background">#c6c6c6</color>
+    <color name="poll_question_icon_activated_background">#4778d9</color>
+    <color name="poll_state_closing_text">#949494</color>
+    <color name="poll_state_text">#4778d9</color>
+    <color name="poll_ranking_text">#333333</color>
+
+
+    <!-- from MoreTextView -->
+    <color name="text_sub_type4">#a3a3a3</color>
+    <color name="material_gray">#737373</color>
+
+    <!-- for FilePicker -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- call -->
+    <color name="call_receive">#47c9d9</color>
+    <color name="call_receive_pressed">#0097a7</color>
+    <color name="call_reject">#f03d25</color>
+    <color name="call_reject_pressed">#c62828</color>
+    <color name="call_icon_grey">#44000000</color>
+    <color name="light_gray">#999999</color>
+
+    <!-- for SigninLayout -->
+    <color name="sign_in_background">#f7f8f9</color>
+    <color name="sign_in_primary">#4778d9</color>
+    <color name="sign_in_accent">#999999</color>
+    <color name="sign_in_highlight">#999999</color>
+    <color name="sign_in_button_disabled_color">#dce1e6</color>
+    <color name="sign_in_type_primary_color">#36a38d</color>
+    <color name="sign_in_type_text_color">#30927e</color>
+    <color name="sign_in_type_accent_color">#267867</color>
+    <color name="sign_in_domain_color">#99333333</color>
+
+    <!-- jude custom -->
+    <color name="jude_primary">#616161</color>
+    <color name="jude_primary_dark">#373737</color>
+    <color name="jude_accent">#80CBC4</color>
+
+    <color name="jude_secondary_text">#ff434343</color>
+
+
+    <!-- search -->
+    <color name="checked_filter_text_color">#262626</color>
+    <color name="unchecked_filter_text_color">#757575</color>
+    <color name="suggestion_match_text_highlight_color">#3860d0</color>
+    <color name="dark_24">#242424</color>
+
+    <!-- write -->
+    <color name="attach_icon_color">#7a858d</color>
+    <color name="attach_icon_disabled_color">#337a858d</color>
+    <color name="attach_icon_enabled_color">#4778d9</color>
+    <color name="title_divider_disabled_color">#e2e3e4</color>
+
+    <!-- feed -->
+    <color name="feed_comment_background_color">#fafafa</color>
+
+    <color name="shimmer_background_color">#eeeeee</color>
+    <color name="shimmer_gradient_color">#a2cccccc</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/jude_primary</item>
+        <item name="colorPrimaryDark">@color/jude_primary_dark</item>
+        <item name="colorAccent">@color/jude_accent</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:navigationBarColor">@color/jude_primary_dark</item>
+        <item name="android:statusBarColor">@color/jude_primary_dark</item>
+        <item name="android:textColorPrimary">@color/soft_black</item>
+        <item name="android:textColorSecondary">@color/jude_secondary_text</item>
+        <item name="android:colorPrimary">#616161</item>
+        <item name="android:colorPrimaryDark">@color/jude_primary_dark</item>
+        <item name="android:colorAccent">@color/jude_accent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="class_name" translatable="false">
+        <item>Appetites</item>
+        <item>CandidateKey</item>
+        <item>BlockGame</item>
+        <item>OpenChatRoom</item>
+        <item>Tasks</item>
+        <item>Elevator</item>
+    </string-array>
+
+</resources>
