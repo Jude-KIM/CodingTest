@@ -1,1 +1,1 @@
-include ':app', ':elevator', ':lib'
+include ':app', ':java'
