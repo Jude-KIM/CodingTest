@@ -1,4 +1,4 @@
-package jude.codingtest.java;
+package jude.codingtest.java.recursive;
 
 import java.io.IOException;
 import java.util.ArrayList;
