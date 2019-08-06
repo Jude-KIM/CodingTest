@@ -33,10 +33,10 @@ public class BinaryTreeInorder {
      */
 
     public static void main(String[] args) throws IOException {
-        System.out.println(inorderTraversal().toString());
+
     }
 
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public static List<Integer> inorderTraversal(TreeNode root) {
 
         List<Integer> result = new ArrayList<>();
         build(root, result);
@@ -44,7 +44,7 @@ public class BinaryTreeInorder {
         return result;
     }
 
-    public void build(TreeNode node, List<Integer> result) {
+    public  static void build(TreeNode node, List<Integer> result) {
 
         if(node != null) {
             if(node.left != null)
@@ -55,14 +55,12 @@ public class BinaryTreeInorder {
                 build(node.right, result);
 
         }
-
-
     }
 
-    public class TreeNode {
-          int val;
-          TreeNode left;
-          TreeNode right;
-          TreeNode(int x) { val = x; }
-     }
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
 }
