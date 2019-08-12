@@ -27,17 +27,17 @@ public class BinaryTreeLevelOrder {
      */
 
     public static void main(String[] args) throws IOException {
-        BinaryTreeInorder.TreeNode node5 = new BinaryTreeInorder.TreeNode(3);
-        node5.left = new BinaryTreeInorder.TreeNode(9);
+        TreeNode node5 = new TreeNode(3);
+        node5.left = new TreeNode(9);
 //        node5.right = new BinaryTreeInorder.TreeNode(20);
-        BinaryTreeInorder.TreeNode node4 = new BinaryTreeInorder.TreeNode(20);
-        node4.left = new BinaryTreeInorder.TreeNode(15);
-        node4.right = new BinaryTreeInorder.TreeNode(7);
+        TreeNode node4 = new TreeNode(20);
+        node4.left = new TreeNode(15);
+        node4.right = new TreeNode(7);
         node5.right = node4;
         System.out.println(levelOrder(node5).toString());
     }
 
-    private static List<List<Integer>> levelOrder(BinaryTreeInorder.TreeNode root) {
+    private static List<List<Integer>> levelOrder(TreeNode root) {
         Map<Integer, List<Integer>> map = new HashMap<>();
         List<List<Integer>> result = new ArrayList<>();
         if(root == null)
@@ -47,7 +47,7 @@ public class BinaryTreeLevelOrder {
         return result;
     }
 
-    private static void build(Map<Integer, List<Integer>> map, BinaryTreeInorder.TreeNode node, int level) {
+    private static void build(Map<Integer, List<Integer>> map, TreeNode node, int level) {
         List<Integer> list = map.get(level);
         if(list == null)
             list = new ArrayList<>();

@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static jude.codingtest.java.tree.UniqueBinarySearchTree.numTrees;
-
 public class ValidateBinaryTree {
 
     /**
@@ -48,13 +46,13 @@ public class ValidateBinaryTree {
      */
 
     public static void main(String[] args) throws IOException {
-        BinaryTreeInorder.TreeNode node5 = new BinaryTreeInorder.TreeNode(5);
-        node5.left = new BinaryTreeInorder.TreeNode(1);
+        TreeNode node5 = new TreeNode(5);
+        node5.left = new TreeNode(1);
 //        node5.right = new BinaryTreeInorder.TreeNode(3);
 
-        BinaryTreeInorder.TreeNode node4 = new BinaryTreeInorder.TreeNode(4);
-        node4.left = new BinaryTreeInorder.TreeNode(3);
-        node4.right = new BinaryTreeInorder.TreeNode(6);
+        TreeNode node4 = new TreeNode(4);
+        node4.left = new TreeNode(3);
+        node4.right = new TreeNode(6);
         node5.right = node4;
 
         System.out.println(isValidBST(node5));
@@ -66,13 +64,13 @@ public class ValidateBinaryTree {
 //             *   5   15
 //             *      / \
 //             *     6   20
-    public static boolean isValidBST(BinaryTreeInorder.TreeNode root) {
+    public static boolean isValidBST(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         return build(root, list);
 //        return false;
     }
 
-    public static boolean build(BinaryTreeInorder.TreeNode node, List<Integer> list) {
+    public static boolean build(TreeNode node, List<Integer> list) {
             if (node != null) {
                 if (node.left != null) {
                     boolean test = build(node.left, list);
