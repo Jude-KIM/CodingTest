@@ -43,19 +43,15 @@ public class FlattenBinaryTree {
 
     public static void flatten(TreeNode root) {
         List<Integer> list = new ArrayList<>();
-        build(list, root);
-        TreeNode node = new TreeNode(list.get(0));
-        build2(list, node, 1);
-        root = node;
-        System.out.println(list.toString());
-    }
-
-    private static void build2(List<Integer> list, TreeNode root, int index) {
-        if(index >= list.size())
+        if(root == null)
             return;
-
-        root.right = new TreeNode(list.get(index));
-        build2(list, root.right, index+1);
+        build(list, root);
+        root.left = null;
+        TreeNode cur = root;
+        for(int i = 1; i < list.size(); i++){
+            cur.right = new TreeNode(list.get(i));
+            cur = cur.right;
+        }
     }
 
     private static void build(List<Integer> list, TreeNode root) {
