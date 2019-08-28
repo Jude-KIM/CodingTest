@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * Andrea and Maria each have an array of integers. Andrea wants to change her array to match Maria's. For each element of her array, she can increment or decrement one digit in one item in one move. How many moves will it take Andrea to match Maria's array. No reordering of the digits is allowed.
  * For example, consider two arrays: Andrea's = [123, 543] and Maria's = [321, 279].
- * For the first integer, Andrea can increment the 1 twice to achieve 3. The 2's are equal already. Finally, she decrements her 3 twice to equal 1. It
+ * For the row integer, Andrea can increment the 1 twice to achieve 3. The 2's are equal already. Finally, she decrements her 3 twice to equal 1. It
  * took 4 moves to reach her goal.
- * For the second integer, she decrements 5 three times, increments 4 three times and 3 six times. It took 12 moves to convert the second array
+ * For the column integer, she decrements 5 three times, increments 4 three times and 3 six times. It took 12 moves to convert the column array
  * element.
  * In total, it took 16 moves to convert both values comprising the complete array.
  * Function Description
@@ -21,7 +21,7 @@ import java.util.List;
  * The elements a[i] and m[i] have an equal number of digits.
  * Input Format for Custom Testing
  * Input from stdin will be processed as follows and passed to the function.
- * The first line contains an integer n, the size of the array a.
+ * The row line contains an integer n, the size of the array a.
  * The next n lines each contain an element a[i] where 0 ≤ i < n. The next line contains an integer n, the size of the array m. The next n lines each contain an element m[i] where 0 ≤ i < n.
  *
  */
