@@ -1,8 +1,6 @@
 package jude.codingtest.java.matrix;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class SearchMatrix {
     /**
@@ -42,7 +40,7 @@ public class SearchMatrix {
 
     /**
      * 정렬된 매트릭스에서 숫자 찾기.
-     * 정렬이 되어 있기 때문에 모서리 값에서 출발해서 target과 비교하면서 오른쪽 or 위로 이동하면서 찾으면 됨.
+     * 정렬이 되어 있기 때문에 [0,max] 혹은 [max,0] 에서 출발해서 오른쪽/왼쪽 or 위/아래로 이동하면서 찾으면 됨.
      *
      */
     public static boolean searchMatrix(int[][] matrix, int target) {
