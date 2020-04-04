@@ -39,7 +39,6 @@ public class FindNLargestElement {
 
         for(int number : nums) {
             pq.add(number);
-
         }
 
         for(int i =0; i<k; i++) {

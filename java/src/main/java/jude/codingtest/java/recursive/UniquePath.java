@@ -43,19 +43,16 @@ public class UniquePath {
         uniquePaths(7, 3);
     }
 
-    public static int uniquePaths(int m, int n) {
+    private static void uniquePaths(int m, int n) {
         List<String> list = new ArrayList<>();
         list.add("Right");
         list.add("Down");
-        String[] result = new String[m-1+n-1];
+        String[] result = new String[m-1 + n - 1];
         Map<String, Integer> map = new HashMap<>();
-        count = 0;
-        permutation(m-1+n-1, 0, list, m, n, map, result);
-        return count;
+        start(m-1+n-1, 0,list, m,n,map,result);
     }
 
-    public static int count;
-    public static void permutation(int r, int index, List<String> arr, final int m, final int n, Map<String, Integer> map, String[] result) {
+    private static void start(int length, int index, List<String> command, int m, int n, Map<String, Integer> map, String[] result) {
         if(map.containsKey("Right") && map.get("Right") > m-1) {
             return;
         }
@@ -64,22 +61,89 @@ public class UniquePath {
             return;
         }
 
-        if(index == r) {
+        if (index == length) {
             count++;
             return;
         }
 
-        for (int i=0; i< 2; i++) {
-            String action = arr.get(i);
+        for(int i=0; i<command.size(); i++) {
+            System.out.println(index);
+            String action = command.get(i);
             result[index] = action;
             if(map.containsKey(action)) {
                 map.put(action, map.get(action) + 1);
             } else {
                 map.put(action, 1);
             }
-            permutation(r, index+1, arr, m, n, map, result);
+            start(length, index+1, command, m, n, map, result);
             map.put(action, map.get(action) - 1);
         }
 
+//        for (int i=0; i< 2; i++) {
+//            String action = arr.get(i);
+//            result[index] = action;
+//            if(map.containsKey(action)) {
+//                map.put(action, map.get(action) + 1);
+//            } else {
+//                map.put(action, 1);
+//            }
+//            permutation(r, index+1, arr, m, n, map, result);
+//            map.put(action, map.get(action) - 1);
+//        }
+
+
     }
+
+    public static int count = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+//    public static int uniquePaths(int m, int n) {
+//        List<String> list = new ArrayList<>();
+//        list.add("Right");
+//        list.add("Down");
+//        String[] result = new String[m-1+n-1];
+//        Map<String, Integer> map = new HashMap<>();
+//        count = 0;
+//        permutation(m-1+n-1, 0, list, m, n, map, result);
+//        return count;
+//    }
+//
+//    public static int count;
+//    public static void permutation(int r, int index, List<String> arr, final int m, final int n, Map<String, Integer> map, String[] result) {
+//        if(map.containsKey("Right") && map.get("Right") > m-1) {
+//            return;
+//        }
+//
+//        if(map.containsKey("Down") && map.get("Down") > n-1) {
+//            return;
+//        }
+//
+//        if(index == r) {
+//            count++;
+//            return;
+//        }
+//
+//        for (int i=0; i< 2; i++) {
+//            String action = arr.get(i);
+//            result[index] = action;
+//            if(map.containsKey(action)) {
+//                map.put(action, map.get(action) + 1);
+//            } else {
+//                map.put(action, 1);
+//            }
+//            permutation(r, index+1, arr, m, n, map, result);
+//            map.put(action, map.get(action) - 1);
+//        }
+//
+//    }
 }

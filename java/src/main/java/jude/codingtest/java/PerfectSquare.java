@@ -32,7 +32,7 @@ public class PerfectSquare {
      * Dynamic programming으로 풀어야 하는 문제.
      * 최소값을 찾는 문제이므로 배열을 Integer.Max 로 초기화 시켜 놓고 시작.
      * 제곱해서 i보다 작거나 같은 모든 정수 j에 대해 아래를 계산해야 함
-     * res[i] = Math.min(res[i-j*j] + 1, res[i])
+     * result[i] = Math.min(res[i-j*j] + 1, result[i])
      *
      */
     public static int numSquares(int n) {

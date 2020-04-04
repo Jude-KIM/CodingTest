@@ -55,6 +55,14 @@ public class NumberIslands {
     //row 0,1
     //coulm 0,1,2,3
 
+    /** DFS, BFS 문제.
+     * 이중 포문으로 0,0에서부터 모든 위치를 탐색.
+     * 1을 만나면, 그 지점에서 인접지역에 0이 하나도 없을때까지 모든 1을 0으로 바꾼다. 이게 iteration 1회
+     *  1회가 끝날때마다 output+1 하고 다시 탐색재개. 위에서 1을 만나면 인접한 1을 0으로 계속 바꾸므로,
+     *  원래 1이던 위치도 0으로 바뀌어서 이중 for문이 빨리 끝남.
+
+     */
+
     public static int numIslands(char[][] grid) {
         int result = 0;
         for(int i=0; i< grid.length; i++) {

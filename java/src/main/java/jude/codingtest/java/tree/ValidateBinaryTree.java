@@ -59,17 +59,25 @@ public class ValidateBinaryTree {
     }
 
 
-//            *     10
-//             *    / \
-//             *   5   15
-//             *      / \
-//             *     6   20
+
     public static boolean isValidBST(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         return build(root, list);
 //        return false;
     }
 
+
+//            *     10
+//             *    / \
+//             *   5   15
+//             *      / \
+//             *     6   20
+    /**
+     * root를 기준으로 자기보다 왼쪽은 자기보다 작아야 하고, 오른쪽은 자기보다 커야 한다.
+     * 그런데 모든 node에 대해서 이 조건만 검사하면, 위 예제와 같은 경우는 식별 불가함.
+     * 결국 트리를 왼쪽, 가운데, 오른쪽 순으로 순회하면서 list에 값을 넣고, 항상 list의 마지막 값 < 현재 노드의 값이어야만 true임.
+     *
+     */
     public static boolean build(TreeNode node, List<Integer> list) {
             if (node != null) {
                 if (node.left != null) {
